@@ -1,0 +1,17 @@
+-- CREATE DATABASE CQRP_DB;
+USE CQRP_DB;
+GO
+
+CREATE TABLE [dbo].[CQRP_DB].[USERS]
+(
+    [Id] UNIQUEIDENTIFIER NOT NULL,
+    [FirstName] NVARCHAR(50) NOT NULL,
+    [LastName] NVARCHAR(50) NOT NULL,
+    [DocumentNumber] NVARCHAR(16) NOT NULL,
+    [DocumentType] INT NOT NULL,
+    [Email] NVARCHAR(32),
+    [DateCreated] DATETIME NOT NULL,
+
+    CONSTRAINT [USERS] PRIMARY KEY([Id])
+)
+GO

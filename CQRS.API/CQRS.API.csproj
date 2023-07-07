@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS.API.Application.Commands\CQRS.API.Application.Commands.csproj" />
+    <ProjectReference Include="..\CQRS.API.Application.Queries\CQRS.API.Application.Queries.csproj" />
+    <ProjectReference Include="..\CQRS.API.Core\CQRS.API.Core.csproj" />
+    <ProjectReference Include="..\CQRS.API.Infrastructure.Input\CQRS.API.Infrastructure.Input.csproj" />
+    <ProjectReference Include="..\CQRS.API.Infrastructure.Output\CQRS.API.Infrastructure.Output.csproj" />
+  </ItemGroup>
+
+</Project>
